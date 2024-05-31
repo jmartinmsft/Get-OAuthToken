@@ -86,6 +86,7 @@ function Get-CloudServiceEndpoint {
                 $exchangeOnlineEndpoint = "https://outlook.office.com"
                 $autodiscoverSecureName = "https://autodiscover-s.outlook.com"
                 $azureADEndpoint = "https://login.microsoftonline.com"
+                $managementApiEndpoint = "https://manage.office.com"
                 break
             }
             "USGovernmentL4" {
@@ -94,6 +95,7 @@ function Get-CloudServiceEndpoint {
                 $exchangeOnlineEndpoint = "https://outlook.office365.us"
                 $autodiscoverSecureName = "https://autodiscover-s.office365.us"
                 $azureADEndpoint = "https://login.microsoftonline.us"
+                $managementApiEndpoint = "https://manage.office365.us"
                 break
             }
             "USGovernmentL5" {
@@ -102,6 +104,7 @@ function Get-CloudServiceEndpoint {
                 $exchangeOnlineEndpoint = "https://outlook-dod.office365.us"
                 $autodiscoverSecureName = "https://autodiscover-s-dod.office365.us"
                 $azureADEndpoint = "https://login.microsoftonline.us"
+                $managementApiEndpoint = "https://manage.protection.apps.mil"
                 break
             }
             "ChinaCloud" {
@@ -110,6 +113,7 @@ function Get-CloudServiceEndpoint {
                 $exchangeOnlineEndpoint = "https://partner.outlook.cn"
                 $autodiscoverSecureName = "https://autodiscover-s.partner.outlook.cn"
                 $azureADEndpoint = "https://login.partner.microsoftonline.cn"
+                $managementApiEndpoint = "https://manage.office.cn"
                 break
             }
         }
@@ -121,6 +125,7 @@ function Get-CloudServiceEndpoint {
             ExchangeOnlineEndpoint = $exchangeOnlineEndpoint
             AutoDiscoverSecureName = $autodiscoverSecureName
             AzureADEndpoint        = $azureADEndpoint
+            ManagementApiEndpoint  = $managementApiEndpoint
         }
     }
 }
